@@ -71,8 +71,7 @@ var RecorderController = function (element, service, recorderUtils, $scope, $tim
   control.elapsedTime = 0;
   //Sets ID for the element if ID doesn't exists
   if (!control.id) {
-    control.id = recorderUtils.generateUuid();
-    element.attr("id", control.id);
+    control.id =  element.attr("id");
   }
 
 
